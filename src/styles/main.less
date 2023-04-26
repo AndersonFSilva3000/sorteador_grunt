@@ -1,0 +1,80 @@
+@colorBackground: #0fbcf9;
+@colorFont: #fff;
+@colorButtom: #05c46b;
+
+@fontText: Roboto, sans-serif;
+@fontTitle: Lobster, cursive;
+
+* {
+  background-color: @colorBackground;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: @colorFont;
+  font-family: @fontText;
+}
+
+h1 {
+  font-family: @fontTitle;
+  font-size: 3em;
+}
+
+main {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.5em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.1em;
+  border-radius: .5em;
+  font-family: @fontText;
+  margin-top: 1em;
+  background-color: @colorButtom;
+  border: 1px solid @colorButtom;
+  transition: all ease .5s;
+  margin-bottom: 1rem;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: .8;
+  }
+}
+
+label {
+  display: block;
+}
+
+input {
+  padding: 1em;
+  margin: 1em 0 0;
+  border: none;
+  border-bottom: 1px solid @colorFont;
+  background-color: transparent;
+  max-width: 125px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.result {
+  display: none;
+  padding: 1rem;
+  border: 2px dashed @colorFont;
+  max-width: 320px;
+  margin: 0 auto;
+
+  span {
+    display: block;
+    font-size: 2em;
+    font-weight: bolder;
+  }
+}

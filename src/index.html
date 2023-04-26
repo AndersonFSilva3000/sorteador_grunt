@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1>Sorteio</h1>
+    <form id="drawer">
+      <div>
+        <label for="numberMax">Número Máximo</label>
+        <input type="number" id="numberMax" min="2" required value="2" step="1">
+      </div>
+      <button type="submit">Sortear Número</button>
+    </form>
+    <div class="result">
+      O resultado do Sorteio foi: <span id="resultValue"></span>
+    </div>
+  </main>
+
+  <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>
